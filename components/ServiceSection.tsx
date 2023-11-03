@@ -1,4 +1,6 @@
 import React from "react";
+import ServiceCard from "./ServiceCard";
+import people from "@/public/multiple-users-silhouette.png";
 
 const ServiceSection = () => {
   return (
@@ -11,7 +13,23 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"></div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <ServiceCard
+            title="Digital Marketing"
+            text="Our digital marketing strategies help boost ypur online prescence amd reach"
+            image={people}
+          />
+          <ServiceCard
+            title="Web Design"
+            text="We create stunning and user friendly websites"
+            image={people}
+          />
+          <ServiceCard
+            title="E-commerce Solutions"
+            text="We create robust E-commerce platforms to help you sell your products online"
+            image={people}
+          />
+        </div>
       </div>
     </section>
   );
