@@ -1,6 +1,8 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import people from "@/public/multiple-users-silhouette.png";
+import website from "@/public/internet.png";
+import eCommerce from "@/public/ecommerce.png";
 
 const ServiceSection = () => {
   return (
@@ -22,12 +24,12 @@ const ServiceSection = () => {
           <ServiceCard
             title="Web Design"
             text="We create stunning and user friendly websites"
-            image={people}
+            image={website}
           />
           <ServiceCard
             title="E-commerce Solutions"
             text="We create robust E-commerce platforms to help you sell your products online"
-            image={people}
+            image={eCommerce}
           />
         </div>
       </div>
